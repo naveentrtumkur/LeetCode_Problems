@@ -1,3 +1,11 @@
+/*
+
+More optimisation by storing max of first row/first column and using first row & first column
+to store teh max elements.
+
+*/
+
+
 // Working solution to the problem.
 
 // I have come up with my logic to solve this problem.
