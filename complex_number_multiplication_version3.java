@@ -1,6 +1,7 @@
 // Convert String a = a +ib;
 // Convert String b = c + id;
 
+Main conversion and division of real and imag parts happens in getVal() function.
 //Perform teh calculation and output the result.
 
 class Solution {
