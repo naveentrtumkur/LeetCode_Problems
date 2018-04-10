@@ -3,7 +3,7 @@
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
         int maxLen = 0, maxCount =0;
-        boolean prev = false;
+       // boolean prev = false; // redundant not required.
         //Handle the base case.
         if(nums.length == 0)
             return maxLen;
@@ -12,14 +12,15 @@ class Solution {
         {
             if(nums[i] == 1)
             {
-                prev = true;
+                //prev = true;
                 maxCount++;
                 if(maxCount > maxLen)
                     maxLen = maxCount;
             }
             else
             {
-                prev = false;
+		// Redundant not reqd.
+                //prev = false;
                 maxCount = 0;
             }
         
