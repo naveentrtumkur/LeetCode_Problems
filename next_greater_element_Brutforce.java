@@ -1,3 +1,4 @@
+//Simple naive approach
 //Just loop through the array from every elemnt to it's complete cycle till u find next greater element.
 // If not found assign -1 and return the newly formed array.
 
