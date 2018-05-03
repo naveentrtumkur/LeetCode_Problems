@@ -21,7 +21,10 @@ class Solution {
             if(!update[i])
             {
                 update[i] = true;
-                sum += searchNum(i,max,update);
+               
+                    int val = searchNum(i,max,update);
+                  sum += val;
+                //System.out.println("Sum = "+val);
                 update[i] = false;
                 
             }
@@ -36,18 +39,24 @@ class Solution {
 		if (prev < max) {
 			count += 1;
 		} else {
+             //System.out.println("count="+count);
 			return count;
+           
 		}
 
 		for (int i = 0; i < 10; i++) {
 			if (!update[i]) {
 				update[i] = true;
+               // System.out.println("prev="+prev);
 				long cur = 10 * prev + i;
+               // System.out.println("cur="+cur);
+                //System.out.println("cur="+cur);
 				count += searchNum(cur, max, update);
 				update[i] = false;
 			}
 		}
 
+        //System.out.println("Just before="+count);
 		return count;
         
     }
