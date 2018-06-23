@@ -1,3 +1,7 @@
+// Task Scheduler Idle slots
+// Time- O(n) space O(1)
+// Efficient soln.
+
 public class Solution {
     public int leastInterval(char[] tasks, int n) {
         int[] map = new int[26];
