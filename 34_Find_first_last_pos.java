@@ -14,7 +14,7 @@ class Solution {
         
         
         
-    int[] ret = {-1, -1};
+    int[] ret = {-1, -1}; //by default it's -1, -1
         if(nums == null || nums.length ==0)
             return ret;
         int n = nums.length;
@@ -22,6 +22,7 @@ class Solution {
     // Search for the left one
     while (i < j)
     {
+        //finding the leftmost index
         int mid = (i + j) /2;
         if (nums[mid] < target) i = mid + 1;
         else j = mid;
@@ -33,11 +34,12 @@ class Solution {
     j = n-1;  // We don't have to set i to 0 the second time.
     while (i < j)
     {
+        //finding the rightmost index....
         int mid = (i + j) /2 + 1;	// Make mid biased to the right
         if (nums[mid] > target) j = mid - 1;  
         else i = mid;				// So that this won't make the search range stuck.
     }
     ret[1] = j;
-    return ret; 
+    return ret; //return the computed result...
     }
 }
