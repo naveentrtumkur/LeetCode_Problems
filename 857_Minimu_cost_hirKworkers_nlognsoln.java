@@ -10,9 +10,9 @@ class Solution {
         for (double[] worker: workers) {
             qsum += worker[1];
             pq.add(-worker[1]);
-            if (pq.size() > K) qsum += pq.poll();
-            if (pq.size() == K) res = Math.min(res, qsum * worker[0]);
+            if (pq.size() > K) qsum += pq.poll(); //pq.poll removes the person with highest quality.
+            if (pq.size() == K) res = Math.min(res, qsum * worker[0]); // If the pq size is equal to K, then qsum times worker/wage ratio gives the total wage till now.
         }
-        return res;
+        return res; //return the calculated result.
     }
 }
