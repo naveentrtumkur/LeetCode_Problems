@@ -12,7 +12,7 @@ class Solution {
                 return true;
             
             StringBuilder temp = new StringBuilder(s);
-            temp.remove(i);
+            temp.deleteCharAt(i);
             if(isPalindrome(temp.toString()))
                return true;
         }
@@ -23,8 +23,10 @@ class Solution {
     
     public boolean isPalindrome(String temp)
     {
-        StringBuilder rev = new StringBuilder(temp);
-        if(temp.equals(rev.reverse()))
+        StringBuilder rev = new StringBuilder();
+        rev.append(temp);
+        //System.out.println(rev.reverse().toString());
+        if(temp.equals(rev.reverse().toString()))
             return true;
         else
             return false;
