@@ -1,10 +1,9 @@
 // Dp Soln with O(n) space and O(n) time.
 // with efficient soln Space can be reduced to O(1)
 
-// Time : O(n) Space : O(1)
 class Solution {
     public int climbStairs(int n) {
-        int[] prevCounts = new int[n+1];
+        //int[] prevCounts = new int[n+1];
         if (n == 0) return 0;
         if (n == 1) return 1;
         if (n == 2) return 2;
