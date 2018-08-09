@@ -1,6 +1,7 @@
 // Bruteforce Recursive Soln with memoization using HashMap
 // Time : O(n3) Space: O(n3)
 
+//Other approaches: backtracking and DP soln.
  class Solution {
 
     public List<String> wordBreak(String s, List<String> wordDict) {
